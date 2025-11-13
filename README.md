@@ -92,22 +92,6 @@ jupyter notebook eda/eda.ipynb
 - **ucimlrepo** - UCI dataset access
 - **Jupyter** - Interactive development environment
 
-## Key Findings
-
-*Coming soon after EDA*
-
-## Model Performance
-
-*Coming soon - will include comparison of multiple classification algorithms*
-
-## Future Work
-
-- Implement multiple classification algorithms (Logistic Regression, Random Forest, Gradient Boosting)
-- Handle class imbalance with SMOTE or class weights
-- Feature engineering and selection
-- Hyperparameter tuning
-- Deploy model as a web application for real-time predictions
-
 ## References
 
 Realinho, V., Vieira Martins, M., Machado, J., & Baptista, L. (2021). Predict Students' Dropout and Academic Success [Dataset]. UCI Machine Learning Repository. https://doi.org/10.24432/C5MC89.
@@ -120,4 +104,3 @@ Sue - Cal Poly San Luis Obispo, Computer Science (BS)
 
 - Dataset provided by UCI Machine Learning Repository
 - Project completed as part of CSC-466 Knowledge Discovery course at Cal Poly
-```
