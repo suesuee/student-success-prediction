@@ -71,7 +71,7 @@ ROC curves quantify the model's ability to discriminate between classes at vario
 
 These AUC scores suggest that adjusting decision thresholds could potentially improve Enrolled class prediction, trading off some accuracy on the majority class to better identify this at-risk minority group. This threshold tuning represents a promising direction for the final report.
 
-### What the Model Learned: Feature Importance
+### Feature Importance
 
 The top 10 most important features reveal the model's decision-making logic. Academic performance dominates overwhelmingly. Second semester metrics prove more important than first semester, suggesting that academic trajectory and sustained performance matter more than initial success.
 
@@ -172,12 +172,6 @@ While the simple XGBoost configuration (max_depth=3, learning_rate=0.1, n_estima
 The critical requirement is using nested cross-validation for this tuning. Since I've already evaluated on the test set once, repeatedly testing different hyperparameters on the same test set would cause information leakage and inflated performance estimates. Nested CV uses an outer loop to evaluate final performance on held-out folds while an inner loop tunes hyperparameters, ensuring honest performance estimates.
 
 Another approach is threshold optimization, where instead of using the default 0.33 probability threshold for three-class prediction, I would calibrate separate thresholds for each class based on maximizing F1-score on a validation set. This might improve Enrolled class detection at the cost of slightly more false positives, which could be acceptable if identifying at-risk enrolled students is the priority.
-
-### 6.5 Data Collection Recommendations
-
-To fundamentally improve predictions beyond what algorithms alone can achieve, the institution needs richer behavioral and engagement data. Administrative records capture outcomes like grades but not the processes leading to those outcomes. Collecting attendance rates, learning management system engagement (login frequency, time on materials), assignment submission patterns, and support service utilization (tutoring, counseling, academic advising) would provide behavioral signals distinguishing committed students from those disengaging.
-
-Mid-semester checkpoint grades at weeks 4, 8, and 12 rather than just semester-end would reveal academic trajectories earlier, enabling intervention before outcomes are sealed. Student motivation data through surveys - why they enrolled, their career goals, external obligations like work hours and family responsibilities - might predict persistence better than demographics alone. These process measures would likely improve Enrolled class prediction substantially, addressing the temporal ambiguity that administrative records cannot solve alone.
 
 **Deliverables:**
 - Jupyter notebook: `models/baseline_models.ipynb`
