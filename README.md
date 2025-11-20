@@ -44,7 +44,10 @@ student-success-prediction/
 ├── eda/                       # Exploratory Data Analysis
 │   ├── eda.ipynb
 │   └── eda_summary.md
-├── models/                    # Model training (coming soon)
+├── models/   
+│   ├── baseline_models.ipynb    # Model training
+│   └── REPORT.md                # Training Report 
+├── pics/
 ├── requirements.txt           # Python dependencies
 ├── .gitignore
 └── README.md
