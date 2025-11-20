@@ -48,6 +48,8 @@ student-success-prediction/
 │   ├── baseline_models.ipynb    # Model training
 │   └── REPORT.md                # Training Report 
 ├── pics/
+├── preprocessing/
+│   └── codebook.md                 # vars table
 ├── requirements.txt           # Python dependencies
 ├── .gitignore
 └── README.md
