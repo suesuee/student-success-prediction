@@ -38,7 +38,7 @@ Beyond baseline models, four improvement strategies were systematically explored
 
 ### The Best Model: XGBoost 
 
-After testing multiple approaches, **XGBoost** emerged as the best-performing model, achieving **76.72% test accuracy** - a 26.79 percentage point improvement over the dummy baseline. More impressively, the model demonstrated excellent generalization with only a 0.98% gap between cross-validation (77.71%) and test performance, indicating it will perform reliably on new, unseen students.
+After testing multiple approaches, **XGBoost** emerged as the best-performing model, achieving **76.72% test accuracy** - a 26.79 percentage point improvement over the dummy baseline. More impressively, the model demonstrated excellent generalization with only a 0.98% gap between cross-validation (77.71%) and test performance, indicating it will perform reliably on new, unseen students. For test accuracy that I didn't fill in here, I'm focusing on the test set evaluation on comparing the two best models (GB and XGBoost) to avoid repeatedly testing on the same test set, which could cause information leakage. 
 
 | Model | Cross-Val Accuracy | Test Accuracy | Generalization Gap |
 |-------|-------------------|---------------|-------------------|
