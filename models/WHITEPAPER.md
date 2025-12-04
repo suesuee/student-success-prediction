@@ -1,7 +1,9 @@
 # Predicting Student Success: A Two-Stage Machine Learning Approach for Early Intervention
 
 **Sue Sue**
+
 Computer Science, Cal Poly San Luis Obispo
+
 CSC-466 Knowledge Discovery from Data
 
 ---
